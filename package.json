@@ -1,0 +1,26 @@
+{
+  "name": "dungeon",
+  "version": "0.0.1",
+  "description": "A dungeon game",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "echo Building && npx tsc && echo Rolling && rollup -c"
+  },
+  "author": "ItsJustMeChris",
+  "license": "MIT",
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^17.1.0",
+    "dat.gui": "^0.7.7",
+    "open-simplex-noise": "^2.4.0",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "uuid": "^8.3.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-typescript": "^8.2.0",
+    "@types/dat.gui": "^0.7.6",
+    "@types/uuid": "^8.3.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
+  }
+}

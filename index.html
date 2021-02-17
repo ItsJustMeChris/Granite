@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>game</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,400i,700,700i&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html,
+      body,
+      canvas {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        user-select: none;
+      }
+      canvas {
+        image-rendering: -moz-crisp-edges;
+        image-rendering: -webkit-crisp-edges;
+        image-rendering: pixelated;
+        image-rendering: crisp-edges;
+      }
+    </style>
+  </head>
+
+  <body>
+    <canvas id="canvas"></canvas>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.6/dat.gui.min.js"
+      integrity="sha256-HJ7j+71YYw6Kcs8THwQV9lXmPOcR0eXlg7n8KRTZsyA="
+      crossorigin="anonymous"
+    ></script>
+    <script type="module" src="output/index.js"></script>
+  </body>
+</html>

@@ -3,7 +3,7 @@ import { Vector2 } from "../helpers/Vector2";
 
 export class World {
     private noise;
-    private depths = {
+    public depths = {
         water: -0.2,
         sand: -0.08,
         dirt: -0.05,

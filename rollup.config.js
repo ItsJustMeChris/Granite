@@ -1,5 +1,5 @@
 import { nodeResolve } from "@rollup/plugin-node-resolve";
-import commonjs from '@rollup/plugin-commonjs'
+import commonjs from "@rollup/plugin-commonjs";
 
 export default {
   input: "build/index.js",
@@ -8,9 +8,9 @@ export default {
     format: "cjs",
   },
   plugins: [
-    nodeResolve(),
     commonjs({
       include: ["node_modules/**"],
     }),
+    nodeResolve({ browser: true, preferBuiltins: true }),
   ],
 };

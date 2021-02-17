@@ -1,3 +1,4 @@
+import { DevToolbox } from "../helpers/Toolbox";
 import { Vector2 } from "../helpers/Vector2";
 import { EntityList } from "./EntityList";
 import { Player } from "./Player";
@@ -5,7 +6,7 @@ import { World } from "./World";
 
 export class Game {
     private ctx: CanvasRenderingContext2D;
-    private world: World;
+    public world: World;
     private entities: EntityList;
     private localPlayer: Player;
 
@@ -19,6 +20,8 @@ export class Game {
         this.world = new World();
         this.entities = new EntityList();
         this.localPlayer = new Player(new Vector2(0, 0));
+
+        new DevToolbox(this);
 
         this.entities.pushEntity(this.localPlayer);
     }
